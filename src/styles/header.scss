@@ -2,9 +2,13 @@
   position: relative;
   background-image: url(../images/Cover_photo.png);
   background-position: 85%;
+  height: 50vh;
   background-size: cover;
-  height: 100vh;
   background-repeat: no-repeat;
+
+  @include on-desktop {
+    height: 100vh;
+  }
 
   &__nav {
     display: flex;
